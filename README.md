@@ -1,6 +1,6 @@
 # `compile_commands.json` generator
 
-Generate `compile_commands.json` commands from makefile for clangd
+generate `compile_commands.json` from makefile for clangd
 
 Basically, it iterates makefile to find every target, run `make target --print-all GEN_COMPILE_COMMANDS=true` for each one, parse outputs to collect all the compile commands, and write each command into `compile_commands.json` with the format required by clangd
 
